@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 let Schema = mongoose.Schema
 
 let Habitacion = new Schema({
+
     nombre: {
         type: String,
         required: true

@@ -9,12 +9,14 @@ let controladorReserva = new ControladorReserva()
 
 export let rutas = express.Router();
 
+//Habitacion
 rutas.get('/API/v1/viernes', controlador.buscarTodos)
 rutas.get('/API/v1/viernes/:id', controlador.buscarPorId)
 rutas.post('/API/v1/viernes',controlador.insertar)
 rutas.put('/API/v1/viernes/:id', controlador.editar)
 rutas.delete('/API/v1/viernes/:id', controlador.eliminar)
 
+//Reserva
 rutas.get('/API/v1/viernesreserva', controladorReserva.buscarTodos)
 rutas.get('/API/v1/viernesreserva/:id', controladorReserva.buscarPorId)
 rutas.post('/API/v1/viernesreserva',controladorReserva.insertar)

@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 let Schema = mongoose.Schema
 
 let Reserva = new Schema({
+    
     idCliente: {
         type: Number,
         required:true
@@ -25,6 +26,11 @@ let Reserva = new Schema({
 
     numPersonas: {
         type: Number,
+        required:true
+    },
+
+    id_hab: {
+        type: String,
         required:true
     }
 })
